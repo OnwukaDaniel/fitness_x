@@ -10,6 +10,11 @@ class Landing extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.all(16),
         children: [
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(23),
+            ),
+          )
         ],
       ),
     );
