@@ -5,4 +5,12 @@ class LandingViewModel extends BaseViewModel{
   List<ExerciseDataModel> bestList = AppDataRepo.bestList;
   List<ChallengeData> challengeList = AppDataRepo.challengeList;
   List<ExerciseDataModel> fastWarmUp = AppDataRepo.fastWarmUp;
+
+  int _bottomTab = 0;
+  int get bottomTab=> _bottomTab;
+
+  setBottomTab(int input){
+    _bottomTab = input;
+    notifyListeners();
+  }
 }
