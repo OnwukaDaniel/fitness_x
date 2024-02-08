@@ -6,6 +6,7 @@ class Landing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenPadding = 16;
+    double bottomAppBarHeight = 64;
     return ViewModelBuilder<LandingViewModel>.nonReactive(
       viewModelBuilder: () => LandingViewModel(),
       builder: (context, model, child) {
@@ -17,12 +18,12 @@ class Landing extends StatelessWidget {
                 ListView(
                   physics: const BouncingScrollPhysics(),
                   padding: EdgeInsets.all(screenPadding),
-                  children: const [
-                    AdsView(),
-                    BestForYOu(),
-                    Challenge(),
-                    FastWarmUp(),
-                    SizedBox(height: 64),
+                  children: [
+                    const AdsView(),
+                    const BestForYOu(),
+                    const Challenge(),
+                    const FastWarmUp(),
+                    SizedBox(height: bottomAppBarHeight),
                   ],
                 ),
                 const BottomBar(),

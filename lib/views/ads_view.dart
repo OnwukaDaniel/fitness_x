@@ -27,6 +27,27 @@ class AdsView extends StackedHookView<LandingViewModel> {
               fit: BoxFit.fill,
             ),
           ),
+        ),
+        Container(
+          height: 180,
+          clipBehavior: Clip.hardEdge,
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [
+                Colors.black54,
+                Colors.black54,
+                Colors.black38,
+                Colors.black12,
+                Colors.transparent,
+                Colors.transparent,
+                Colors.transparent,
+              ],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+            ),
+            borderRadius: BorderRadius.circular(23),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
