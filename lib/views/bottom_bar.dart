@@ -14,7 +14,6 @@ class BottomBar extends StackedHookView<LandingViewModel> {
       child: Container(
         height: viewHeight,
         margin: EdgeInsets.all(screenPadding),
-        padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           color: AppColor.black1,
           borderRadius: BorderRadius.circular(32),
@@ -25,10 +24,13 @@ class BottomBar extends StackedHookView<LandingViewModel> {
             (index) {
               var data = model.bottomBarList[index];
               if (model.bottomTab == index) {
+                double startPad = model.bottomTab == 0 ? 16 : 8;
+                double endPad =
+                    model.bottomTab == model.bottomBarList.length - 1 ? 16 : 0;
                 return Container(
                   height: viewHeight - 25,
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
-                  margin: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.all(8),
+                  margin: EdgeInsets.only(left: startPad, right: endPad),
                   decoration: BoxDecoration(
                     color: AppColor.orange,
                     borderRadius: BorderRadius.circular(32),
@@ -54,10 +56,13 @@ class BottomBar extends StackedHookView<LandingViewModel> {
                   highlightColor: Colors.transparent,
                   splashColor: Colors.transparent,
                   onTap: () => model.setBottomTab(index),
-                  child: Image.asset(
-                    data.imagePath,
-                    height: 16,
-                    width: 16,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: Image.asset(
+                      data.imagePath,
+                      height: 16,
+                      width: 16,
+                    ),
                   ),
                 ),
               );
