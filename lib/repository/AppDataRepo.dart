@@ -73,30 +73,22 @@ class AppDataRepo{
       level: 'Beginner',
     ),
   ];
-  static List<ExerciseDataModel> bottomBarList = [
-    ExerciseDataModel(
-      imagePath: 'asset/homepage/warm_up/warm_up1.png',
-      title: 'Leg exercises',
-      time: '10 min',
-      level: 'Beginner',
+  static List<BottomBarDataModel> bottomBarList = [
+    BottomBarDataModel(
+      imagePath: 'asset/bottom_icons/home.png',
+      title: 'Home',
     ),
-    ExerciseDataModel(
-      imagePath: 'asset/homepage/best/best3.png',
-      title: 'Plank',
-      time: '5 min',
-      level: 'Beginner',
+    BottomBarDataModel(
+      imagePath: 'asset/bottom_icons/explore.png',
+      title: 'Explore',
     ),
-    ExerciseDataModel(
-      imagePath: 'asset/homepage/warm_up/warm_up2.png',
-      title: 'Backward lunges',
-      time: '5 min',
-      level: 'Beginner',
+    BottomBarDataModel(
+      imagePath: 'asset/bottom_icons/stats.png',
+      title: 'Stats',
     ),
-    ExerciseDataModel(
-      imagePath: 'asset/homepage/best/best4.png',
-      title: 'Build Whider Biceps',
-      time: '30 min',
-      level: 'Beginner',
+    BottomBarDataModel(
+      imagePath: 'asset/bottom_icons/profile.png',
+      title: 'Profile',
     ),
   ];
 }

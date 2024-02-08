@@ -18,12 +18,16 @@ class BottomBar extends StackedHookView<LandingViewModel> {
           color: AppColor.black1,
           borderRadius: BorderRadius.circular(32),
         ),
-        child: Column(
-          children: [
-            Expanded(
-              child: Image.asset('name'),
-            )
-          ],
+        child: Row(
+          children: List.generate(
+            model.bottomBarList.length,
+            (index) {
+              var data = model.bottomBarList[index];
+              return Expanded(
+                child: Image.asset(data.imagePath, height: 16, width: 16,),
+              );
+            },
+          ),
         ),
       ),
     );
