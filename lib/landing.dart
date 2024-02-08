@@ -18,6 +18,7 @@ class Landing extends StatelessWidget {
                 AdsView(),
                 BestForYOu(),
                 Challenge(),
+                FastWarmUp(),
               ],
             ),
           ),
