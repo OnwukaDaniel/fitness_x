@@ -11,14 +11,27 @@ class Landing extends StatelessWidget {
         return Scaffold(
           backgroundColor: AppColor.background,
           body: SafeArea(
-            child: ListView(
-              physics: const BouncingScrollPhysics(),
-              padding: const EdgeInsets.all(16),
-              children: const [
-                AdsView(),
-                BestForYOu(),
-                Challenge(),
-                FastWarmUp(),
+            child: Stack(
+              children: [
+                ListView(
+                  physics: const BouncingScrollPhysics(),
+                  padding: const EdgeInsets.all(16),
+                  children: const [
+                    AdsView(),
+                    BestForYOu(),
+                    Challenge(),
+                    FastWarmUp(),
+                  ],
+                ),
+                Positioned(
+                  bottom: 1,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: AppColor.black1,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
