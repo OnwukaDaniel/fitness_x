@@ -9,13 +9,13 @@ class Landing extends StatelessWidget {
       viewModelBuilder: () => LandingViewModel(),
       builder: (context, model, child) {
         return Scaffold(
+          backgroundColor: AppColor.background,
           body: SafeArea(
             child: ListView(
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.all(16),
               children: const [
                 AdsView(),
-                SizedBox(height: 8),
                 BestForYOu(),
               ],
             ),

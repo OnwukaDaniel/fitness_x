@@ -52,14 +52,14 @@ class AdsView extends StackedHookView<LandingViewModel> {
                   Text(
                     "See more",
                     style: TextStyle(
-                      color: AppColor().orange,
+                      color: AppColor.orange,
                       fontSize: 14,
                     ),
                   ),
                   const SizedBox(width: 12),
                   Icon(
                     Icons.arrow_forward_ios,
-                    color: AppColor().orange,
+                    color: AppColor.orange,
                     size: 14,
                   )
                 ],
