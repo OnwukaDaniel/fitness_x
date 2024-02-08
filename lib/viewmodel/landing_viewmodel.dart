@@ -28,4 +28,24 @@ class LandingViewModel extends BaseViewModel{
       level: 'Intermediate',
     ),
   ];
+  List<ChallengeData> challengeList = [
+    ChallengeData(
+      bgColor: const Color(0xFFBBF246),
+      textColor: Colors.black,
+      title: 'Plank Challenge',
+      icon: 'asset/homepage/challenge/challenge_flame.png',
+    ),
+    ChallengeData(
+      bgColor: const Color(0xFF192126),
+      textColor: Colors.white,
+      title: 'Sprint Challenge',
+      icon: 'asset/homepage/challenge/challenge_run.png',
+    ),
+    ChallengeData(
+      bgColor: const Color(0xFFFFFFFF),
+      textColor: Colors.black,
+      title: 'Squat Challenge',
+      icon: 'asset/homepage/challenge/challenge_bottle.png',
+    ),
+  ];
 }

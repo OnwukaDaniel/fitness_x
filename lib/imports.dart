@@ -7,3 +7,5 @@ export 'package:stacked_hooks/stacked_hooks.dart';
 export 'package:fitness_x/utils/colors.dart';
 export 'package:fitness_x/views/best_for_you.dart';
 export 'package:fitness_x/models/best_for_you.dart';
+export 'package:fitness_x/views/challenge.dart';
+export 'package:fitness_x/models/challenge_data.dart';

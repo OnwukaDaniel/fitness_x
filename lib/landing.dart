@@ -17,6 +17,7 @@ class Landing extends StatelessWidget {
               children: const [
                 AdsView(),
                 BestForYOu(),
+                Challenge(),
               ],
             ),
           ),
