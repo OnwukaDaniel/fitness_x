@@ -5,6 +5,8 @@ class Landing extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double screenPadding = 16;
     return ViewModelBuilder<LandingViewModel>.nonReactive(
       viewModelBuilder: () => LandingViewModel(),
       builder: (context, model, child) {
@@ -15,23 +17,27 @@ class Landing extends StatelessWidget {
               children: [
                 ListView(
                   physics: const BouncingScrollPhysics(),
-                  padding: const EdgeInsets.all(16),
+                  padding: EdgeInsets.all(screenPadding),
                   children: const [
                     AdsView(),
                     BestForYOu(),
                     Challenge(),
                     FastWarmUp(),
+                    SizedBox(height: 64),
                   ],
                 ),
                 Positioned(
                   bottom: 1,
+                  width: width,
                   child: Container(
+                    height: 64,
+                    margin: EdgeInsets.all(screenPadding),
                     decoration: BoxDecoration(
                       color: AppColor.black1,
                       borderRadius: BorderRadius.circular(32),
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),

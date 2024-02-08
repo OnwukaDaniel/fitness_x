@@ -10,3 +10,4 @@ export 'package:fitness_x/models/best_for_you.dart';
 export 'package:fitness_x/views/challenge.dart';
 export 'package:fitness_x/models/challenge_data.dart';
 export 'package:fitness_x/views/fast_warm_up.dart';
+export 'package:fitness_x/repository/AppDataRepo.dart';
