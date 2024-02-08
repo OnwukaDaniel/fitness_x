@@ -30,14 +30,23 @@ class AdsView extends StackedHookView<LandingViewModel> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
-                "Best Quarantine Workout",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+              const Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Text(
+                      "Best Quarantine Workout",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Expanded(flex: 1, child: SizedBox()),
+                ],
               ),
+              const SizedBox(height: 32),
               Row(
                 children: [
                   Text(
@@ -47,7 +56,12 @@ class AdsView extends StackedHookView<LandingViewModel> {
                       fontSize: 14,
                     ),
                   ),
-                  Icon(Icons.arrow_forward, color: AppColor().orange)
+                  const SizedBox(width: 12),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: AppColor().orange,
+                    size: 14,
+                  )
                 ],
               ),
             ],

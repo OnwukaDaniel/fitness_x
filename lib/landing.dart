@@ -15,6 +15,8 @@ class Landing extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               children: const [
                 AdsView(),
+                SizedBox(height: 8),
+                BestForYOu(),
               ],
             ),
           ),
