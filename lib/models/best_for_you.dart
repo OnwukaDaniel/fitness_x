@@ -1,10 +1,10 @@
-class BestForYouModel {
+class ExerciseDataModel {
   String imagePath = '';
   String title = '';
   String time = '';
   String level = '';
 
-  BestForYouModel({
+  ExerciseDataModel({
     this.imagePath = '',
     this.title = '',
     this.time = '',
