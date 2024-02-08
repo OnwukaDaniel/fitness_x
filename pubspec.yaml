@@ -31,5 +31,5 @@ flutter:
     - family: Lato
       fonts:
         - asset: fonts/lato/Lato-Regular.ttf
-        - asset: fonts/Lato-Italic.ttf
+        - asset: fonts/lato/Lato-Italic.ttf
           style: italic
