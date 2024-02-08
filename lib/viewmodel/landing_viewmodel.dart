@@ -50,14 +50,8 @@ class LandingViewModel extends BaseViewModel{
   ];
   List<ExerciseDataModel> fastWarmUp = [
     ExerciseDataModel(
-      imagePath: 'asset/homepage/best/best1.png',
-      title: 'Belle fat burner',
-      time: '10 min',
-      level: 'Beginner',
-    ),
-    ExerciseDataModel(
-      imagePath: 'asset/homepage/best/best2.png',
-      title: 'Lose fat',
+      imagePath: 'asset/homepage/warm_up/warm_up1.png',
+      title: 'Leg exercises',
       time: '10 min',
       level: 'Beginner',
     ),
@@ -65,13 +59,19 @@ class LandingViewModel extends BaseViewModel{
       imagePath: 'asset/homepage/best/best3.png',
       title: 'Plank',
       time: '5 min',
-      level: 'Expert',
+      level: 'Beginner',
+    ),
+    ExerciseDataModel(
+      imagePath: 'asset/homepage/warm_up/warm_up2.png',
+      title: 'Backward lunges',
+      time: '5 min',
+      level: 'Beginner',
     ),
     ExerciseDataModel(
       imagePath: 'asset/homepage/best/best4.png',
       title: 'Build Whider Biceps',
       time: '30 min',
-      level: 'Intermediate',
+      level: 'Beginner',
     ),
   ];
 }

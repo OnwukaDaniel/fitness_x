@@ -28,9 +28,9 @@ class FastWarmUp extends StackedHookView<LandingViewModel> {
             physics: const BouncingScrollPhysics(),
             crossAxisCount: 2,
             children: List.generate(
-              model.bestList.length,
+              model.fastWarmUp.length,
               (index) {
-                var data = model.bestList[index];
+                var data = model.fastWarmUp[index];
                 return Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
