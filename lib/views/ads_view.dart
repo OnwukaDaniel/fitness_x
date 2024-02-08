@@ -31,7 +31,7 @@ class AdsView extends StackedHookView<LandingViewModel> {
         Container(
           height: 180,
           clipBehavior: Clip.hardEdge,
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
               colors: [
@@ -67,7 +67,7 @@ class AdsView extends StackedHookView<LandingViewModel> {
                   Expanded(flex: 1, child: SizedBox()),
                 ],
               ),
-              const SizedBox(height: 32),
+              const Spacer(),
               Row(
                 children: [
                   Text(
@@ -77,11 +77,11 @@ class AdsView extends StackedHookView<LandingViewModel> {
                       fontSize: 14,
                     ),
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 8),
                   Icon(
                     Icons.arrow_forward_ios,
                     color: AppColor.orange,
-                    size: 14,
+                    size: 12,
                   )
                 ],
               ),
