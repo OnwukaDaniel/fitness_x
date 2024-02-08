@@ -18,6 +18,13 @@ class BottomBar extends StackedHookView<LandingViewModel> {
           color: AppColor.black1,
           borderRadius: BorderRadius.circular(32),
         ),
+        child: Column(
+          children: [
+            Expanded(
+              child: Image.asset('name'),
+            )
+          ],
+        ),
       ),
     );
   }
