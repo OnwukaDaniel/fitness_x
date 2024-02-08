@@ -38,7 +38,7 @@ class BottomBar extends StackedHookView<LandingViewModel> {
                   child: Row(
                     children: [
                       const SizedBox(width: 12),
-                      Image.asset(data.imagePath, height: 16, width: 16),
+                      Image.asset(data.imagePath, height: 22, width: 22),
                       const SizedBox(width: 12),
                       Text(
                         data.title,
