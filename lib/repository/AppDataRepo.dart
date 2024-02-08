@@ -9,16 +9,16 @@ class AppDataRepo{
       level: 'Beginner',
     ),
     ExerciseDataModel(
-      imagePath: 'asset/homepage/best/best2.png',
-      title: 'Lose fat',
-      time: '10 min',
-      level: 'Beginner',
-    ),
-    ExerciseDataModel(
       imagePath: 'asset/homepage/best/best3.png',
       title: 'Plank',
       time: '5 min',
       level: 'Expert',
+    ),
+    ExerciseDataModel(
+      imagePath: 'asset/homepage/best/best2.png',
+      title: 'Lose fat',
+      time: '10 min',
+      level: 'Beginner',
     ),
     ExerciseDataModel(
       imagePath: 'asset/homepage/best/best4.png',
